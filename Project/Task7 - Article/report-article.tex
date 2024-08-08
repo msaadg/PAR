@@ -1,0 +1,132 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{float}
+\geometry{a4paper, margin=1in}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\includegraphics[width=2cm]{img/logo.png}}
+\lhead{Commodity Futures Price Prediction}
+\rfoot{Page \thepage}
+
+\begin{document}
+
+% Custom title page
+\begin{titlepage}
+    \centering
+    \vspace*{\fill} % Add vertical space to push the content to the middle
+    \includegraphics[width=10cm]{img/logo2.png}\\[1cm] % Adjust the path as necessary
+    {\Large \textbf{Commodity Futures Price Prediction using Artificial Intelligence}}\\[0.5cm]
+    {\large Muhammad Saad}\\[0.2cm]
+    {\large \today}\\[0.5cm]
+    \vspace*{\fill}
+\end{titlepage}
+
+\newpage
+\tableofcontents
+\newpage
+
+\section{Summary of the Article}
+
+The thesis ``Commodity Futures Price Prediction, an Artificial Intelligence Approach" by Ernest A. Foster explores various artificial intelligence techniques for predicting financial time series data, particularly focusing on daily values of commodity futures. The primary methods used are artificial neural networks (ANNs) and genetic algorithms (GAs). The study involves developing and comparing the effectiveness of three approaches:
+\begin{enumerate}
+    \item Pure neural network approach.
+    \item Neural networks with architecture evolved by genetic algorithms.
+    \item Neural networks with weights evolved by genetic algorithms.
+\end{enumerate}
+
+\section{Extracted Key Findings}
+
+\subsection{Neural Networks for Financial Time Series Analysis}
+\begin{itemize}
+    \item Neural networks, particularly multilayer perceptrons (three-layer, feedforward networks), are effective in identifying patterns and making predictions in financial time series data.
+    \item The optimal performance of neural networks depends significantly on the choice of network parameters and architecture.
+\end{itemize}
+
+\subsection{Genetic Algorithms in Optimizing Neural Networks}
+\begin{itemize}
+    \item Genetic algorithms can optimize neural network parameters such as the number of input nodes, hidden nodes, initial weight range, and learning parameters.
+    \item GAs can also evolve the weights of neural networks, potentially avoiding the pitfalls of local minima associated with gradient descent methods.
+\end{itemize}
+
+\subsection{Comparison of Methods}
+\begin{itemize}
+    \item The study found that using genetic algorithms to evolve neural network weights (GA-Weight approach) produced results very close to the best manually optimized neural network.
+    \item The GA-Weight approach requires significantly fewer man-hours compared to traditional methods and is computationally less intensive than using GAs to optimize both architecture and weights (GANN approach).
+\end{itemize}
+
+\section{Identified Algorithms}
+
+\subsection{Artificial Neural Networks (ANNs)}
+\begin{itemize}
+    \item \textbf{Architecture}: Multilayer perceptron (three-layer, feedforward network).
+    \item \textbf{Training Algorithm}: Resilient backpropagation (RPROP) with weight decay.
+    \item \textbf{Parameters}:
+    \begin{itemize}
+        \item Number of input nodes.
+        \item Number of hidden nodes.
+        \item Initial weight range.
+        \item Initial step size.
+        \item Maximum step size.
+        \item Weight decay parameter.
+    \end{itemize}
+\end{itemize}
+
+\subsection{Genetic Algorithms (GAs)}
+\begin{itemize}
+    \item \textbf{Selection Scheme}: Standard roulette wheel selection.
+    \item \textbf{Crossover Operator}: Single point crossover, modified for real-valued representation.
+    \item \textbf{Mutation Operator}: Gaussian random modifications for real-valued weights.
+    \item \textbf{Chromosome Representation}: Real numbers for network parameters and weights.
+\end{itemize}
+
+\section{Technical Implementation}
+
+\subsection{Neural Network Training}
+\begin{itemize}
+    \item \textbf{Software Used}: Stuttgart Neural Network Simulator (SNNS) for implementing RPROP with weight decay.
+    \item \textbf{Data Preprocessing}: Normalization of data to values between zero and one, and denormalization for error calculations.
+\end{itemize}
+
+\subsection{Genetic Algorithm Optimization}
+\begin{itemize}
+    \item \textbf{Software Used}: GAlib (version 4.5) for genetic algorithm implementation.
+    \item \textbf{Objective Function}: Neural network training error (sum of squared errors) on both training and testing datasets.
+    \item \textbf{Representation}: Real-valued chromosomes for network parameters and weights.
+\end{itemize}
+
+\section{Application to Our Project}
+
+\subsection{Utilizing Neural Networks}
+\begin{itemize}
+    \item \textbf{Pattern Recognition}: ANNs can be employed to recognize patterns in historical price data of agricultural commodities.
+    \item \textbf{Parameter Optimization}: The architecture and training parameters of ANNs need to be carefully chosen for optimal performance. This involves experimenting with different numbers of input and hidden nodes, initial weight ranges, and weight decay parameters.
+\end{itemize}
+
+\subsection{Integrating Genetic Algorithms}
+\begin{itemize}
+    \item \textbf{Parameter Selection}: GAs can be used to automate the selection of optimal neural network parameters, reducing the need for manual trial and error.
+    \item \textbf{Weight Optimization}: GAs can evolve the weights of the neural network, potentially improving prediction accuracy by avoiding local minima.
+\end{itemize}
+
+\subsection{Methodology for Our Project}
+\begin{enumerate}
+    \item \textbf{Data Preparation}: Normalize historical price data of agricultural commodities.
+    \item \textbf{Neural Network Design}: Start with a multilayer perceptron architecture and implement RPROP with weight decay for training.
+    \item \textbf{Genetic Algorithm Integration}:
+    \begin{itemize}
+        \item Use GAs to evolve optimal network parameters and weights.
+        \item Evaluate the performance of the network using both training and validation datasets.
+    \end{itemize}
+    \item \textbf{Evaluation and Comparison}: Compare the performance of pure neural networks with those optimized using genetic algorithms.
+\end{enumerate}
+
+\subsection{Expected Outcomes}
+\begin{itemize}
+    \item \textbf{Improved Accuracy}: By using GAs to optimize network parameters and weights, we can expect improved prediction accuracy compared to manually optimized networks.
+    \item \textbf{Efficiency}: Reduced man-hours and computational resources required for parameter selection and training.
+\end{itemize}
+
+\end{document}

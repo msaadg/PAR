@@ -1,0 +1,175 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{float}
+\geometry{a4paper, margin=1in}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\setmainlanguage[numerals=Maghrib]{urdu}
+\setotherlanguages{english}
+\newfontfamily\urdufont[Script=Arabic, Language=Urdu]{Noto Nastaliq Urdu}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\includegraphics[width=2cm]{img/logo.png}}
+\lhead{\begin{urdu} کسان معلومات جمع کرنے کا سروے \end{urdu}}
+\fancyfoot[C]{\begin{urdu} صفحہ \thepage \end{urdu}}
+
+\begin{document}
+
+% Custom title page
+\begin{titlepage}
+    \centering
+    \vspace*{\fill} 
+    \includegraphics[width=10cm]{img/logo2.png}\\[1cm]
+    {\Large \begin{urdu} \textbf{کسان معلومات جمع کرنے کا سروے} \end{urdu}}\\[0.5cm]
+    {\large \begin{urdu} محمد سعد \end{urdu}}\\[0.2cm]
+    {\large \today}\\[0.5cm]
+    \vspace*{\fill}
+\end{titlepage}
+
+\newpage
+
+\begin{urdu}
+محترم کسان،
+
+ہم پاکستان میں زراعت پر اثر انداز ہونے والے معاشی و سماجی عوامل کو سمجھنے کے لئے ایک سروے کر رہے ہیں۔ آپ کی شرکت اختیاری ہے اور آپ کے جوابات کو خفیہ رکھا جائے گا۔ اس سروے کا مقصد تعلیم، خاندان کے سائز، اور فارم کے سائز کی معلومات اکٹھی کرنا ہے تاکہ زراعتی پالیسیوں اور معاونتی خدمات میں بہتری لائی جا سکے۔
+
+\section*{حصہ ۱: کسان کی تعلیم}
+
+\begin{enumerate}[label=\arabic*.]
+    \item \textbf{آپ کی عمر کتنی ہے؟}
+    \begin{itemize}
+        \item [$\Box$] بیس سال سے کم
+        \item [$\Box$] بیس سے تیس سال
+        \item [$\Box$] اکتیس سے چالیس سال
+        \item [$\Box$] اکتالیس سے پچاس سال
+        \item [$\Box$] اکاون سے ساٹھ سال
+        \item [$\Box$] ساٹھ سال سے زیادہ
+    \end{itemize}
+    \item \textbf{آپ نے زیادہ سے زیادہ کون سی تعلیم حاصل کی ہے؟}
+    \begin{itemize}
+        \item [$\Box$] کوئی باقاعدہ تعلیم نہیں
+        \item [$\Box$] پرائمری اسکول (۱-۵ سال)
+        \item [$\Box$] مڈل اسکول (۶-۸ سال)
+        \item [$\Box$] ہائی اسکول (۹-۱۰ سال)
+        \item [$\Box$] ہائیر سیکنڈری (۱۱-۱۲ سال)
+        \item [$\Box$] کالج/یونیورسٹی (بیچلرز ڈگری)
+        \item [$\Box$] پوسٹگریجویٹ (ماسٹرز ڈگری یا اس سے زیادہ)
+    \end{itemize}
+    \item \textbf{کیا آپ کو کوئی زراعتی تربیت یا تعلیم حاصل ہے؟}
+    \begin{itemize}
+        \item [$\Box$] ہاں
+        \item [$\Box$] نہیں
+    \end{itemize}
+    \item \textbf{اگر ہاں، تو براہ کرم تربیت یا تعلیم کی قسم بتائیں:}
+    \begin{itemize}
+        \item [$\Box$] خاندان سے غیر رسمی تربیت
+        \item [$\Box$] حکومتی تربیتی پروگرام
+        \item [$\Box$] نجی تربیتی پروگرام
+        \item [$\Box$] زراعتی اسکول/کالج
+        \item [$\Box$] دیگر (براہ کرم وضاحت کریں): \rule{10cm}{0.4pt}
+    \end{itemize}
+\end{enumerate}
+
+\section*{حصہ ۲: خاندان کا سائز}
+
+\begin{enumerate}[label=\arabic*.]
+    \setcounter{enumi}{4}
+    \item \textbf{آپ کے گھر میں کتنے افراد رہتے ہیں؟}
+    \begin{itemize}
+        \item [$\Box$] ۱-۳
+        \item [$\Box$] ۴-۶
+        \item [$\Box$] ۷-۹
+        \item [$\Box$] ۱۰-۱۲
+        \item [$\Box$] بارہ سے زیادہ
+    \end{itemize}
+    \item \textbf{آپ کے گھر کے کتنے افراد فارم پر کام کرتے ہیں؟}
+    \begin{itemize}
+        \item [$\Box$] ۱-۲
+        \item [$\Box$] ۳-۴
+        \item [$\Box$] ۵-۶
+        \item [$\Box$] ۷-۸
+        \item [$\Box$] آٹھ سے زیادہ
+    \end{itemize}
+    \item \textbf{فارم پر کام کرنے والے گھر کے افراد کی عمریں کیا ہیں؟ (آپ متعدد منتخب کر سکتے ہیں)}
+    \begin{itemize}
+        \item [$\Box$] اٹھارہ سال سے کم
+        \item [$\Box$] اٹھارہ سے تیس سال
+        \item [$\Box$] اکتیس سے پچاس سال
+        \item [$\Box$] پچاس سال سے زیادہ
+    \end{itemize}
+\end{enumerate}
+
+\section*{حصہ ۳: فارم کا سائز}
+
+\begin{enumerate}[label=\arabic*.]
+    \setcounter{enumi}{7}
+    \item \textbf{آپ کے فارم کا کل رقبہ کتنا ہے؟ (ایکڑ میں)}
+    \begin{itemize}
+        \item [$\Box$] ایک ایکڑ سے کم
+        \item [$\Box$] ۱-۲ ایکڑ
+        \item [$\Box$] ۳-۵ ایکڑ
+        \item [$\Box$] ۶-۱۰ ایکڑ
+        \item [$\Box$] ۱۱-۲۰ ایکڑ
+        \item [$\Box$] ۲۱-۵۰ ایکڑ
+        \item [$\Box$] پچاس ایکڑ سے زیادہ
+    \end{itemize}
+    \item \textbf{آپ کے فارم کا کاشت شدہ رقبہ کتنا ہے؟ (ایکڑ میں)}
+    \begin{itemize}
+        \item [$\Box$] ایک ایکڑ سے کم
+        \item [$\Box$] ۱-۲ ایکڑ
+        \item [$\Box$] ۳-۵ ایکڑ
+        \item [$\Box$] ۶-۱۰ ایکڑ
+        \item [$\Box$] ۱۱-۲۰ ایکڑ
+        \item [$\Box$] ۲۱-۵۰ ایکڑ
+        \item [$\Box$] پچاس ایکڑ سے زیادہ
+    \end{itemize}
+    \item \textbf{کیا آپ اپنے فارم کی زمین کے مالک ہیں، کرایہ پر لی ہوئی ہے، یا دونوں؟}
+    \begin{itemize}
+        \item [$\Box$] مالک
+        \item [$\Box$] کرایہ
+        \item [$\Box$] دونوں
+    \end{itemize}
+    \item \textbf{آپ کے فارم کی زمین کتنے پلاٹوں یا حصوں میں تقسیم ہے؟}
+    \begin{itemize}
+        \item [$\Box$] ۱
+        \item [$\Box$] ۲-۳
+        \item [$\Box$] ۴-۵
+        \item [$\Box$] پانچ سے زیادہ
+    \end{itemize}
+    \item \textbf{آپ بنیادی طور پر کون سی فصلیں کاشت کرتے ہیں؟ (آپ متعدد منتخب کر سکتے ہیں)}
+    \begin{itemize}
+        \item [$\Box$] گندم
+        \item [$\Box$] چاول
+        \item [$\Box$] گنا
+        \item [$\Box$] کپاس
+        \item [$\Box$] پھل (براہ کرم وضاحت کریں): \rule{10cm}{0.4pt}
+        \item [$\Box$] سبزیاں (براہ کرم وضاحت کریں): \rule{10cm}{0.4pt}
+        \item [$\Box$] دیگر (براہ کرم وضاحت کریں): \rule{10cm}{0.4pt}
+    \end{itemize}
+    \item \textbf{کیا آپ کو فارم کے سائز سے متعلق کوئی چیلنجز کا سامنا ہے؟ (آپ متعدد منتخب کر سکتے ہیں)}
+    \begin{itemize}
+        \item [$\Box$] زمین کی تقسیم
+        \item [$\Box$] مشینری تک محدود رسائی
+        \item [$\Box$] ناکافی آبپاشی
+        \item [$\Box$] مٹی کی زرخیزی میں مسائل
+        \item [$\Box$] دیگر (براہ کرم وضاحت کریں): \rule{10cm}{0.4pt}
+    \end{itemize}
+\end{enumerate}
+
+\section*{اضافی تبصرے}
+براہ کرم اپنے کاشتکاری کے تجربے اور سامنا کرنے والے چیلنجز کے بارے میں کوئی اضافی تبصرے یا تجاویز فراہم کریں:
+\rule{14.8cm}{0.4pt}
+
+\rule{16cm}{0.4pt}
+
+شکریہ آپ کی شرکت کے لئے!
+
+\end{urdu}
+
+\end{document}
